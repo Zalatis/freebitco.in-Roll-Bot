@@ -1,0 +1,4 @@
+
+*.spec
+*.html
+__pycache__/roll.cpython-37.pyc
