@@ -1,4 +1,5 @@
 
 *.spec
 *.html
-__pycache__/roll.cpython-37.pyc
+__pycache__/*
+build/*
