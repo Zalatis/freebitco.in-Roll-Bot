@@ -12,6 +12,6 @@ If it turns out that this project interests a certain number of people, I will d
 
 - Updater
 - Multiple languages support
-- Auto reporter of errors
+- Auto reporter of errors (toggleable)
 - Installation & Guide
 - More to add ? Make a Issue and give your ideas

@@ -99,10 +99,10 @@ def start_bot():
     # Accept cookies
     while True:
         try:
-            cookies = WebDriverWait(driver, 60).until(
+            WebDriverWait(driver, 60).until(
                 EC.presence_of_element_located((By.CLASS_NAME, 'cc_btn_accept_all')))
             print('Fermeture du popup des cookies')
-            cookies.click()
+            driver.execute_script("""document.querySelector("a.cc_btn.cc_btn_accept_all").click()""")
             break
         except:
             print('Erreur cookies')
@@ -110,10 +110,10 @@ def start_bot():
     # Close notifications popup
     while True:
         try:
-            notifications = WebDriverWait(driver, 15).until(
+            WebDriverWait(driver, 15).until(
                 EC.presence_of_element_located((By.CLASS_NAME, 'pushpad_deny_button')))
             print('Fermeture du popup notifications')
-            notifications.click()
+            driver.execute_script("""document.querySelector("div.pushpad_deny_button").click()""")
             break
         except:
             print('Erreur popup notifications')
